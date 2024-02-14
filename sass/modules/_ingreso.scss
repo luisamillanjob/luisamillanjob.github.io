@@ -1,0 +1,130 @@
+@import "../utilidades/variables";
+
+.header-ingreso {
+    justify-content: flex-end;
+}
+
+//ingreso de contenido
+
+body {
+    .main-ingreso {
+        width: 100%;
+        height: 84%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        input {
+            width: 200px;
+            height: 40px;
+            font-size: 2rem;
+        }
+
+        .boton {
+            width: 130px;
+            height: 50px;
+            font-size: 2rem;
+            text-align: center;
+            border-radius: 15px;
+            background-color: $third-color;
+            text-decoration: none;
+            color: black;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }    
+    }
+}
+
+@media screen and (min-width:600px) {
+    body {
+        .main-ingreso {
+            width: 100%;
+            height: 84%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                width: 100px;
+                height: 100px;
+            }
+    
+            input {
+                width: 300px;
+                height: 50px;
+                font-size: 1rem;
+            }
+    
+            .boton {
+                width: 100px;
+                height: 40px;
+                font-size: 1rem;
+                text-align: center;
+                border-radius: 15px;
+                padding: 5px;
+                background-color: $third-color;
+                text-decoration: none;
+                color: black;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }    
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        .main-ingreso {
+            width: 100%;
+            height: 84%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                width: 150px;
+                height: 150px;
+            }
+    
+            input {
+                width: 500px;
+                height: 50px;
+                font-size: 1rem;
+            }
+    
+            .boton {
+                width: 300px;
+                height: 30px;
+                font-size: 1rem;
+                text-align: center;
+                border-radius: 30px;
+                padding: 5px;
+                background-color: $third-color;
+                text-decoration: none;
+                color: black;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }    
+        }
+    }
+}

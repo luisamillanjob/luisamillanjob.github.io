@@ -1,0 +1,111 @@
+@import "../utilidades/variables";
+
+body {
+    .header-nosotros {
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            a {
+                background-color: $primary-color;
+                border-color: black;
+                border-radius: 10px;
+                padding: 5px;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    .main-nosotros {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        overflow: auto;
+
+        .border-nosotros {
+            max-height: fit-content;
+            padding: 10px;
+            padding-left: 10px;
+            border: solid;
+            text-align: center;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .border-nosotros-imagen {
+            border: none;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            padding: 10px;
+
+        }
+    }
+}
+
+@media screen and (min-width:600px) {
+    body {
+        .main-nosotros {
+            height: 95%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 10px;
+
+            .border-nosotros {
+                max-height: fit-content;
+                padding: 10px;
+                border: solid;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 0.77rem;
+            }
+
+            .border-nosotros-imagen {
+                border: none;
+                text-align: center;
+                width: 90%;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        .main-nosotros {
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+
+            .border-nosotros {
+                height: 72%;
+                padding: 10px;
+                border: solid;
+                text-align: center;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .border-nosotros-imagen {
+                border: none;
+                text-align: center;
+                width: 50%;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import "../utilidades/variables";
+
+
+.header-home {
+
+    justify-content: space-between;
+
+    .titulo-home {
+        padding-left: 10%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-left: 2%;
+        padding-right: 5%;
+        color: black;
+    }
+
+}
+
+//inicio de contenido
+
+main {
+
+    .imagen {
+        height: 500px;
+        width: 100%;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+
+        div {
+            border: solid;
+            padding: 1%;
+            margin: 10px;
+            text-align: justify;
+            background-color: $third-color;
+        }
+
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .imagen {
+        height: auto;
+    }
+}

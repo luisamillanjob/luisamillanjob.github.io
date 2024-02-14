@@ -4,33 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
-    <link rel="stylesheet" href="../css/estilos-sobre-nosotros.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <header>
+    <header class="header-nosotros">
 
         <img src="../img/logo.png" alt="logo" width="50px" height="50px" class="logo">
-        <nav>
-            <a href="ingreso.html">Ingresar</a>
-            <a href="#">Sobre Nosotros</a>
-        </nav>
+        <div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./ingreso.html">Ingresar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <table>
-            <td class="border-nosotros">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt deleniti
-                quaerat
-                minima aperiam ex
-            </td>
-            <td class="border-nosotros imagen"><img
-                    src="https://audaces.com/wp-content/uploads/2023/06/empresas-moda-previsibilidade-1024x683-2.jpg"
-                    alt="Imagen" width="80%"></td>
-            <td class="border-nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deleniti
-                quaerat minima
-                aperiam ex</td>
-        </table>
+    <main class="main-nosotros">
+        <div class="border-nosotros">
+            <h2>Mision</h2>
+            <p>Nuestra página de estilos de moda se compromete a inspirar la creatividad, celebrar la diversidad y
+                fomentar la confianza en uno mismo a través del poder de la moda. Queremos ser una fuente de
+                inspiración y empoderamiento para una comunidad inclusiva que valora la autenticidad y la
+                individualidad en el vestir.</p>
+        </div>
+
+        <div class="border-nosotros-imagen"><img
+                src="https://audaces.com/wp-content/uploads/2023/06/empresas-moda-previsibilidade-1024x683-2.jpg"
+                alt="Imagen" width="80%">
+        </div>
+
+        <div class="border-nosotros">
+            <h2>Vision</h2>
+            <p>Nuestra visión es transformar la percepción de la moda, haciéndola más inclusiva, diversa y
+                empoderadora para todos. Queremos crear un espacio donde la creatividad sea celebrada, la diversidad
+                sea valorada y la confianza en uno mismo sea fortalecida a través del arte del vestir. Nos
+                esforzamos por ser líderes en la inspiración de estilos auténticos y en la construcción de una
+                comunidad global que abraza y celebra la singularidad de cada individuo.</p>
+        </div>
     </main>
 
     <footer class="footer-nosotros">
@@ -41,6 +72,9 @@
             <a><img src="../img/x.png" alt="" width="30px"></a>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

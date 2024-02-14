@@ -1,0 +1,29 @@
+@use'modules/reset';
+@use'modules/home';
+@use 'modules/ingreso';
+@use'modules/sobre-nosotros';
+@use'modules/tendencias';
+@use'modules/busqueda';
+@use'modules/perfil';
+@import "utilidades/variables";
+@import "utilidades/extend";
+
+body{
+        background-color: $secondary-color !important;
+        display: flex;
+        flex-direction: column;
+
+        header{
+            background-color: $primary-color;
+            display: flex;
+    
+            a:hover {
+                color: white !important;
+                font-size: larger;
+            }
+        }
+
+        footer {
+            @extend %footer;
+        }
+}
