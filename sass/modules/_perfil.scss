@@ -2,9 +2,9 @@
 @import"../utilidades/extend";
 
 body {
-    height: 100%;
+    min-height: 100vh;
 
-    header {
+    .header-perfil {
         @extend %header;
     }
 
@@ -75,7 +75,7 @@ body {
     .cargar-perfil {
         display: flex;
         justify-content: center;
-
+        margin-top: 5rem;
         button {
             width: 30%;
             border-radius: 10px;
@@ -86,31 +86,33 @@ body {
 
 @media screen and (min-width:600px) {
     body {
-        flex-grow: 1;
+        min-height: 100vh;
 
-        figure {
-            display: flex;
-            gap: 4rem;
-            align-items: center;
-
-            img {
-                width: 60%;
-                height: 20%;
-                border-radius: 50%;
-                margin: 80px;
-            }
-        }
         .main-perfil {
+            flex-grow: 1;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-left: 10px;
             padding-right: 20px;
 
+            figure {
+                display: flex;
+                gap: 4rem;
+                align-items: center;
+
+                img {
+                    width: 50%;
+                    height: 20%;
+                    border-radius: 50%;
+                    margin: 20px;
+                }
+            }
+
             .aside-perfil {
                 background-color: $fourth-color;
-                width: 80%;
-                height: 92%;
+                width: 90%;
+                height: 70%;
                 padding-top: 10px;
                 padding-left: 10px;
 
@@ -125,6 +127,107 @@ body {
                     background-color: rgba(0, 0, 0, 0);
                 }
             }
+
+            .fotos {
+                height: 60%;
+
+                .grid-fotos {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-gap: 10px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .img8 {
+                        display: none;
+                    }
+
+                    .img4 {
+                        grid-row: span 2;
+                    }
+                }
+            }
+        }
+
+        .cargar-perfil {
+            margin-top: 8rem;
+        }
+
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    body {
+        min-height: 100vh;
+
+        .main-perfil {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 20px;
+
+            figure {
+                img {
+                    margin-right: 20PX;
+                }
+            }
+
+            .aside-perfil {
+                background-color: $fourth-color;
+                height: 80%;
+                padding-top: 10px;
+                padding-left: 10px;
+
+                .botones-perfil {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 0;
+                    padding-right: 1rem;
+                }
+
+                .botones-perfil li {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+            }
+
+            .fotos {
+                height: 80%;
+
+                .grid-fotos {
+                    //height: 30%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-gap: 10px;
+                    object-fit: cover;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .img8 {
+                        display: block;
+                        grid-row: span 1;
+                    }
+
+                }
+
+                .grid-fotos .img4 {
+                    grid-row: span 1;
+                }
+            }
+        }
+        .cargar-perfil {
+            margin-top: 6rem;
         }
     }
+    
 }

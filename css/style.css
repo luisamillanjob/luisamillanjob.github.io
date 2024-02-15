@@ -384,7 +384,7 @@ body footer {
   align-items: center;
 }
 
-body header {
+body .header-busqueda {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -514,7 +514,7 @@ body footer {
   align-items: center;
 }
 
-body header {
+body .header-perfil {
   background-color: #c263f9;
   display: flex;
   justify-content: flex-end;
@@ -526,7 +526,7 @@ body header {
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
 }
 body .main-perfil {
   flex-grow: 1;
@@ -579,6 +579,7 @@ body .main-perfil .fotos .grid-fotos img {
 body .cargar-perfil {
   display: flex;
   justify-content: center;
+  margin-top: 5rem;
 }
 body .cargar-perfil button {
   width: 30%;
@@ -588,30 +589,31 @@ body .cargar-perfil button {
 
 @media screen and (min-width: 600px) {
   body {
-    flex-grow: 1;
-  }
-  body figure {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-  }
-  body figure img {
-    width: 60%;
-    height: 20%;
-    border-radius: 50%;
-    margin: 80px;
+    min-height: 100vh;
   }
   body .main-perfil {
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
     padding-right: 20px;
   }
+  body .main-perfil figure {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+  body .main-perfil figure img {
+    width: 50%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 20px;
+  }
   body .main-perfil .aside-perfil {
     background-color: #e58cfc;
-    width: 80%;
-    height: 92%;
+    width: 90%;
+    height: 70%;
     padding-top: 10px;
     padding-left: 10px;
   }
@@ -623,6 +625,83 @@ body .cargar-perfil button {
   }
   body .main-perfil .aside-perfil .botones-perfil li {
     background-color: rgba(0, 0, 0, 0);
+  }
+  body .main-perfil .fotos {
+    height: 60%;
+  }
+  body .main-perfil .fotos .grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  body .main-perfil .fotos .grid-fotos img {
+    width: 100%;
+    height: 100%;
+  }
+  body .main-perfil .fotos .grid-fotos .img8 {
+    display: none;
+  }
+  body .main-perfil .fotos .grid-fotos .img4 {
+    grid-row: span 2;
+  }
+  body .cargar-perfil {
+    margin-top: 8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    min-height: 100vh;
+  }
+  body .main-perfil {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  body .main-perfil figure img {
+    margin-right: 20PX;
+  }
+  body .main-perfil .aside-perfil {
+    background-color: #e58cfc;
+    height: 80%;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  body .main-perfil .aside-perfil .botones-perfil {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  body .main-perfil .aside-perfil .botones-perfil li {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  body .main-perfil .fotos {
+    height: 80%;
+  }
+  body .main-perfil .fotos .grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    object-fit: cover;
+  }
+  body .main-perfil .fotos .grid-fotos img {
+    width: 100%;
+    height: 100%;
+  }
+  body .main-perfil .fotos .grid-fotos .img8 {
+    display: block;
+    grid-row: span 1;
+  }
+  body .main-perfil .fotos .grid-fotos .img4 {
+    grid-row: span 1;
+  }
+  body .cargar-perfil {
+    margin-top: 6rem;
   }
 }
 body footer {
@@ -643,11 +722,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-body header {
+body .header {
   background-color: #c263f9;
   display: flex;
 }
-body header a:hover {
+body .header a:hover {
   color: white !important;
   font-size: larger;
 }

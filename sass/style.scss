@@ -1,6 +1,6 @@
 @use'modules/reset';
 @use'modules/home';
-@use 'modules/ingreso';
+@use'modules/ingreso';
 @use'modules/sobre-nosotros';
 @use'modules/tendencias';
 @use'modules/busqueda';
@@ -8,22 +8,22 @@
 @import "utilidades/variables";
 @import "utilidades/extend";
 
-body{
-        background-color: $secondary-color !important;
+body {
+    background-color: $secondary-color !important;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        background-color: $primary-color;
         display: flex;
-        flex-direction: column;
 
-        header{
-            background-color: $primary-color;
-            display: flex;
-    
-            a:hover {
-                color: white !important;
-                font-size: larger;
-            }
+        a:hover {
+            color: white !important;
+            font-size: larger;
         }
+    }
 
-        footer {
-            @extend %footer;
-        }
+    footer {
+        @extend %footer;
+    }
 }
