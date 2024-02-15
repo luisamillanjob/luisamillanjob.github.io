@@ -166,6 +166,10 @@ body .header-nosotros nav a {
   text-decoration: none;
   color: black;
 }
+body .header-nosotros .logo {
+  width: 80px;
+  height: 80px;
+}
 body .main-nosotros {
   height: 90%;
   display: flex;
@@ -722,11 +726,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-body .header {
+body header {
   background-color: #c263f9;
   display: flex;
 }
-body .header a:hover {
+body header a:hover {
   color: white !important;
   font-size: larger;
 }
