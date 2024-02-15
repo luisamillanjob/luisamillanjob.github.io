@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*inicio seccion Home*/
 .header-home {
   justify-content: space-between;
 }
@@ -47,6 +48,10 @@ main .cards div {
     height: auto;
   }
 }
+/*fin seccion Home: nota la media query es igual en 600px y 1024px*/
+
+
+/*inicio seccion ingreso*/
 .header-ingreso {
   justify-content: flex-end;
 }
@@ -154,6 +159,9 @@ body .main-ingreso form {
     align-items: center;
   }
 }
+/*fin seccion ingreso*/
+
+/*inicio seccion sobre nosotros*/
 body .header-nosotros {
   justify-content: space-between;
   align-items: center;
@@ -258,7 +266,9 @@ body footer {
   padding-top: 5px;
   align-items: center;
 }
+/* fin seccion sobre nosotros*/
 
+/*inico seccion tendencias*/
 body .header-tendencias {
   background-color: #c263f9;
   display: flex;
@@ -375,6 +385,7 @@ body .boton-cargar {
     justify-content: center;
   }
 }
+
 body footer {
   margin-top: 8px;
   width: 100%;
@@ -387,7 +398,9 @@ body footer {
   padding-top: 5px;
   align-items: center;
 }
+/*fin seccion tendencias*/
 
+/*inicio seccion busqueda*/
 body .header-busqueda {
   display: flex;
   align-items: center;
@@ -517,7 +530,9 @@ body footer {
   padding-top: 5px;
   align-items: center;
 }
+/*fin seccion busqueda*/
 
+/*inicio seccion perfil*/
 body .header-perfil {
   background-color: #c263f9;
   display: flex;
@@ -720,7 +735,7 @@ body footer {
   padding-top: 5px;
   align-items: center;
 }
-
+/*fin seccion perfil*/
 body {
   background-color: #e5b3fe !important;
   display: flex;
