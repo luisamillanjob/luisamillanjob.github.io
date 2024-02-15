@@ -13,15 +13,20 @@ body {
     display: flex;
     flex-direction: column;
 
-    .header {
-        background-color: $primary-color;
-        display: flex;
+        header{
+            background-color: $primary-color;
+            display: flex;
+    
+            a:hover {
+                color: white !important;
+                font-size: larger;
+            }
 
-        a:hover {
-            color: white !important;
-            font-size: larger;
+            .logo {
+                width: 80px;
+                height: 80px;
+            }
         }
-    }
 
     footer {
         @extend %footer;
