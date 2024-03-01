@@ -11,7 +11,7 @@ body {
     .main-perfil {
         flex-grow: 1;
 
-        figure {
+        .usuario-perfil {
             display: flex;
             gap: 4rem;
             align-items: center;
@@ -25,7 +25,7 @@ body {
         }
 
         aside {
-            h4 {
+            h2 {
                 text-align: center;
             }
 
@@ -48,7 +48,7 @@ body {
 
         .fotos {
 
-            h2 {
+            h3 {
                 text-align: center;
             }
 
@@ -76,6 +76,7 @@ body {
         display: flex;
         justify-content: center;
         margin-top: 5rem;
+
         button {
             width: 30%;
             border-radius: 10px;
@@ -96,30 +97,36 @@ body {
             padding-left: 10px;
             padding-right: 20px;
 
-            figure {
+            .usuario-perfil {
                 display: flex;
-                gap: 4rem;
+                flex-direction: column;
                 align-items: center;
+                gap: 0;
 
                 img {
                     width: 50%;
                     height: 20%;
                     border-radius: 50%;
-                    margin: 20px;
+                    margin: 10px;
                 }
             }
 
             .aside-perfil {
                 background-color: $fourth-color;
-                width: 90%;
+                width: 100%;
                 height: 70%;
                 padding-top: 10px;
                 padding-left: 10px;
 
+                h2{
+                    font-size: 20px;
+                }
+                
+
                 .botones-perfil {
                     display: flex;
                     flex-direction: column;
-                    padding-left: 0;
+                    padding-left: 15px;
                     padding-right: 1rem;
                 }
 
@@ -130,6 +137,7 @@ body {
 
             .fotos {
                 height: 60%;
+                margin-left: 10px;
 
                 .grid-fotos {
                     display: grid;
@@ -173,9 +181,12 @@ body {
             padding-left: 10px;
             padding-right: 20px;
 
-            figure {
+            .usuario-perfil {
                 img {
-                    margin-right: 20PX;
+                    width: 50%;
+                    height: 20%;
+                    border-radius: 50%;
+                    margin: 20px;
                 }
             }
 
@@ -201,7 +212,7 @@ body {
                 height: 80%;
 
                 .grid-fotos {
-                    //height: 30%;
+                    margin-top: 3.5%;
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     grid-template-rows: repeat(2, 1fr);
@@ -225,9 +236,10 @@ body {
                 }
             }
         }
+
         .cargar-perfil {
             margin-top: 6rem;
         }
     }
-    
+
 }
